@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/essalud_citas}
+    username: ${DB_USER:essalud_app}
+    password: ${DB_PASSWORD}
+  jackson:
+    time-zone: America/Lima
+app:
+  jwt-secret: ${JWT_SECRET}
+  demo: ${APP_DEMO:false}
+  demo-password: ${DEMO_PASSWORD:}
+  cancel-hours: ${CANCEL_HOURS:2}
